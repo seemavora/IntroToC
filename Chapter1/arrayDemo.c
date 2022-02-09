@@ -10,7 +10,8 @@ int main()
     {
         ndigit[i] = 0;
     }
-    while ((c = getchar()) != EOF)
+    c = getchar();
+    while (c != EOF)
     {
         if (c >= '0' && c <= '9')
         {

@@ -8,11 +8,21 @@ int main(int argc, char *argv[])
     int x = atoi(check);
     printf("%d \n", x);
     int i;
+    int c;
+    char *read;
+    char *text = NULL;
+    ssize_t lenLine = 0;
     // int check = atoi(range);
     // printf("%d \n",check);
+    while ((c=getchar()) != EOF){
+
     for (i = 0; i < x; ++i)
     {
-        printf("Hello World - %d\n", argc); // prints the number of arguments
+        read = getline(&text, &lenLine,stdin); // prints the number of arguments
+        printf("%s \n",read, lenLine-1);
+        free(read);
+    }
+
     }
     // by default there is one arg which is the name of the file
 }

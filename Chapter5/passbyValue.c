@@ -16,6 +16,7 @@ void wrongSwap (int z, int s){
     s = temp2;
     printf("this is s %d\n", s);
 }// wrongSwap doesn't work because of the way its referenced. -> this is because of call by value 
+
 int main()
 {
     int x, y;
